@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="Styles/12.Rock,Paper,Scissors.css">
+
+</head>
+
+<body>
+   <p class="title">
+      Rock Paper Scissors
+   </p>
+   <button
+   class="button-move Js-Rock-button">
+   <img src="Images/rock-emoji.png" class="move-icon"></button>
+   <button
+   class="button-move Js-Paper-button">
+   <img src="Images/paper-emoji.png" class="move-icon"></button>
+   
+   <button
+    class="button-move Js-Scissors-button">
+   <img src="Images/scissors-emoji.png" class="move-icon"></button>
+
+   <p class="Js-result result"> </p>
+   <p class="Js-moves"> </p>
+   <p class="Js-Score-element score"> </p>
+
+   <button
+   onclick="
+   Score.Wins =0;
+   Score.Losses =0;
+   Score.Ties =0;
+   localStorage.removeItem('score');
+
+   updateScoreElement();
+   " class="reset-score-button">
+         Reset Score
+      </button>
+
+      <button onclick="
+      autoPlay();
+      " class="auto-play-button">
+      Auto-Play
+      </button>
+
+<script src="Scripts/12.Rock,Paper,Scissors.js"></script>
+
+   <p>
+      <a href="javascript:void(0)">Click here</a>
+         to see the final version of project
+   </p>
+</body>
+</html>
